@@ -1,0 +1,31 @@
+.title-col {
+  color: #000 !important;
+  font-weight: bold;
+}
+
+.footer-container {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 30px;
+  padding: 50px 50px 30px 50px;
+  border: 1px solid #ccc;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.footer-top p,
+.footer-top a,
+.footer-bottom p,
+.footer-bottom a {
+  color: #7c7c7c;
+}
+
+.footer-bottom a {
+  text-decoration: underline;
+}
+
+.footer-top{
+    padding-bottom: 50px;
+}

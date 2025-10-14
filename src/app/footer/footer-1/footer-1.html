@@ -1,1 +1,114 @@
-<p>footer-1 works!</p>
+<div class="footer">
+    <div class="wave-separator">
+        <svg viewBox="0 0 1440 170" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <defs>
+                <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                    <stop stop-color="rgba(250, 246, 244, 1)" offset="0%"></stop>
+                    <stop stop-color="rgba(250, 246, 244, 1)" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+
+            <!-- Фонова вълна -->
+            <path fill="url(#sw-gradient-0)"
+                d="M0,102L80,102C160,102,320,102,480,87.8C640,74,800,45,960,42.5C1120,40,1280,62,1440,85C1600,108,1760,130,1920,121.8C2080,113,2240,74,2400,73.7C2560,74,2720,113,2880,119C3040,125,3200,96,3360,82.2C3520,68,3680,68,3840,65.2C4000,62,4160,57,4320,53.8C4480,51,4640,51,4800,59.5C4960,68,5120,85,5280,96.3C5440,108,5600,113,5760,96.3C5920,79,6080,40,6240,34C6400,28,6560,57,6720,73.7C6880,91,7040,96,7200,90.7C7360,85,7520,68,7680,59.5C7840,51,8000,51,8160,56.7C8320,62,8480,74,8640,79.3C8800,85,8960,85,9120,70.8C9280,57,9440,28,9600,25.5C9760,23,9920,45,10080,70.8C10240,96,10400,125,10560,127.5C10720,130,10880,108,11040,99.2C11200,91,11360,96,11440,99.2L11520,102L11520,170L11440,170C11360,170,11200,170,11040,170C10880,170,10720,170,10560,170C10400,170,10240,170,10080,170C9920,170,9760,170,9600,170C9440,170,9280,170,9120,170C8960,170,8800,170,8640,170C8480,170,8320,170,8160,170C8000,170,7840,170,7680,170C7520,170,7360,170,7200,170C7040,170,6880,170,6720,170C6560,170,6400,170,6240,170C6080,170,5920,170,5760,170C5600,170,5440,170,5280,170C5120,170,4960,170,4800,170C4640,170,4480,170,4320,170C4160,170,4000,170,3840,170C3680,170,3520,170,3360,170C3200,170,3040,170,2880,170C2720,170,2560,170,2400,170C2240,170,2080,170,1920,170C1760,170,1600,170,1440,170C1280,170,1120,170,960,170C800,170,640,170,480,170C320,170,160,170,80,170L0,170Z">
+            </path>
+
+            <!-- Накъсан бордер -->
+            <path fill="none" stroke="#dc6926" stroke-width="2.5" stroke-dasharray="50,30,30,40,60,35,40,25,70,30,35,45"
+                d="M0,102L80,102C160,102,320,102,480,87.8C640,74,800,45,960,42.5C1120,40,1280,62,1440,85C1600,108,1760,130,1920,121.8C2080,113,2240,74,2400,73.7C2560,74,2720,113,2880,119C3040,125,3200,96,3360,82.2C3520,68,3680,68,3840,65.2C4000,62,4160,57,4320,53.8C4480,51,4640,51,4800,59.5C4960,68,5120,85,5280,96.3C5440,108,5600,113,5760,96.3C5920,79,6080,40,6240,34C6400,28,6560,57,6720,73.7C6880,91,7040,96,7200,90.7C7360,85,7520,68,7680,59.5C7840,51,8000,51,8160,56.7C8320,62,8480,74,8640,79.3C8800,85,8960,85,9120,70.8C9280,57,9440,28,9600,25.5C9760,23,9920,45,10080,70.8C10240,96,10400,125,10560,127.5C10720,130,10880,108,11040,99.2C11200,91,11360,96,11440,99.2">
+            </path>
+        </svg>
+    </div>
+    <div class="container-full section-footer">
+        <div class="container-inside rzn-grid gap-30 rzn-col-3">
+            <div class="footer-info-site">
+                <div class="footer-title">
+                    <img src="../../../assets/images/logo/petguides-logo.png" alt="">
+                </div>
+                <p>Всичко за твоя домашен любимец – съвети, магазини и услуги на едно място.</p>
+                <div class="rzn-flex footer-contact-us isDesktop">
+                    <button mat-icon-button matSuffix class="footer-call-icon">
+                        <mat-icon>call</mat-icon>
+                    </button>
+                    <div class="footer-contact-us-number">
+                        <p><a href="tel:0885555694" class="titles-accent">0885555694</a></p>
+                        <p>Имаш бизнес запитване? Свържи се с нас!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-useful-links">
+                <div class="footer-title">
+                    <p>Полезни линкове</p>
+                </div>
+                <ul class="footer-links rzn-grid rzn-col-2-2">
+                    <li>
+                        <a routerLink="/services" class="nav-link">Услуги</a>
+                    </li>
+                    <li>
+                        <a href="https://news.petguides.bg/" class="nav-link">Новини</a>
+                    </li>
+                    <li>
+                        <a routerLink="/our-mission" class="nav-link">Мисия</a>
+                    </li>
+                    <li>
+                        <a routerLink="/general-terms" class="nav-link">Общи Условия</a>
+                    </li>
+                </ul>
+                <ul class="footer-links">
+                    <li>
+                        <a routerLink="/privacy-policy" class="nav-link">Политика за поверителност</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-subscribe-newsletter">
+                <div class="footer-title">
+                    <p>Абонирай се за нашия нюзлетър</p>
+                </div>
+                <p>Абонирай се, за да получаваш новини, отстъпки и специални предложения!</p>
+                <div class="container-send-email">
+                    <mat-form-field appearance="outline" class="email-input">
+                        <mat-label>Email</mat-label>
+                        <input matInput type="email">
+                    </mat-form-field>
+
+                    <button mat-raised-button color="accent" class="footer-submit-btn rzn-flex jc-c v-center">
+                        <mat-icon>arrow_forward</mat-icon>
+                    </button>
+                </div>
+                <div class="isMobile">
+                    <div class="rzn-flex footer-contact-us">
+                        <button mat-icon-button matSuffix class="footer-call-icon">
+                            <mat-icon>call</mat-icon>
+                        </button>
+                        <p><a href="tel:0885555694" class="titles-accent">0885555694</a></p>
+                    </div>
+                    <div>
+                        <p>Имаш бизнес запитване? Свържи се с нас!</p>
+                    </div>
+                </div>
+
+                <div class="social-icons isDesktop">
+                    <a href="https://www.facebook.com/petguides.bg" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
+                            viewBox="0 0 50 50">
+                            <path
+                                d="M32,11h5c0.552,0,1-0.448,1-1V3.263c0-0.524-0.403-0.96-0.925-0.997C35.484,2.153,32.376,2,30.141,2C24,2,20,5.68,20,12.368 V19h-7c-0.552,0-1,0.448-1,1v7c0,0.552,0.448,1,1,1h7v19c0,0.552,0.448,1,1,1h7c0.552,0,1-0.448,1-1V28h7.222 c0.51,0,0.938-0.383,0.994-0.89l0.778-7C38.06,19.518,37.596,19,37,19h-8v-5C29,12.343,30.343,11,32,11z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/petguides.bg" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25"
+                            viewBox="0 0 26 26">
+                            <path
+                                d="M 7.546875 0 C 3.390625 0 0 3.390625 0 7.546875 L 0 18.453125 C 0 22.609375 3.390625 26 7.546875 26 L 18.453125 26 C 22.609375 26 26 22.609375 26 18.453125 L 26 7.546875 C 26 3.390625 22.609375 0 18.453125 0 Z M 7.546875 2 L 18.453125 2 C 21.527344 2 24 4.46875 24 7.546875 L 24 18.453125 C 24 21.527344 21.53125 24 18.453125 24 L 7.546875 24 C 4.472656 24 2 21.53125 2 18.453125 L 2 7.546875 C 2 4.472656 4.46875 2 7.546875 2 Z M 20.5 4 C 19.671875 4 19 4.671875 19 5.5 C 19 6.328125 19.671875 7 20.5 7 C 21.328125 7 22 6.328125 22 5.5 C 22 4.671875 21.328125 4 20.5 4 Z M 13 6 C 9.144531 6 6 9.144531 6 13 C 6 16.855469 9.144531 20 13 20 C 16.855469 20 20 16.855469 20 13 C 20 9.144531 16.855469 6 13 6 Z M 13 8 C 15.773438 8 18 10.226563 18 13 C 18 15.773438 15.773438 18 13 18 C 10.226563 18 8 15.773438 8 13 C 8 10.226563 10.226563 8 13 8 Z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container-inside h-center footer-copyrights">
+            <p>Pet Guides © All rights reserved Copyrights 2025</p>
+        </div>
+    </div>
+</div>

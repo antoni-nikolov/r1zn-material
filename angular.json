@@ -18,20 +18,11 @@
           "builder": "@angular/build:application",
           "options": {
             "browser": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
-            "styles": [
-              "src/styles.scss"
-            ]
+            "assets": ["src/favicon.ico", "src/assets", "src/fonts"],
+            "styles": ["src/styles.scss", "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css"]
           },
           "configurations": {
             "production": {
@@ -75,24 +66,17 @@
         "test": {
           "builder": "@angular/build:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
-            "styles": [
-              "src/styles.scss"
-            ]
+            "assets": ["src/favicon.ico", "src/assets", "src/fonts"],
+            "styles": ["src/styles.scss", "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css"]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "9325ea6d-b60d-4310-a18c-ef85da86c6ad"
   }
 }

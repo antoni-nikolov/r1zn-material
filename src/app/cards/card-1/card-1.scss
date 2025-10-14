@@ -1,0 +1,65 @@
+.section-our-services-card-first {
+    background-image: url('../../../assets/images/backgrounds/bg-our-services-first.png');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    padding: 40px 30px 20px 30px;
+    flex-direction: column;
+    min-height: 200px;
+}
+
+.section-our-services-card-second {
+    background-image: url('../../../assets/images/backgrounds/bg-our-services-second.png');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    padding: 40px 30px 20px 30px;
+    border: 1px solid var(--color-border);
+    flex-direction: column;
+    min-height: 200px;
+}
+
+.section-our-services-card-title {
+    padding-bottom: 20px;
+    height: 50px;
+}
+
+.section-our-services-card-title .title-services {
+    font-size: 21px;
+    line-height: 100%;
+    padding-left: 15px;
+    margin: 0;
+}
+
+.btn-see-more {
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.btn-see-more .material-icons {
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+.btn-see-more span {
+    color: white;
+}
+
+.btn-see-more-accent {
+    color: var(--accent-color);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.btn-see-more-accent .material-icons {
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+.btn-see-more-accent span {
+    color: var(--accent-color);
+}
+

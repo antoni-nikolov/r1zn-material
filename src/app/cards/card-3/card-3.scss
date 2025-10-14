@@ -1,0 +1,61 @@
+.star-container {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  color: #ccc;
+}
+
+.filled-stars {
+  color: var(--accent-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.section-favorite-places-card {
+  border: 1px solid var(--accent-color);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.section-favorite-places-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  display: block;
+}
+
+.section-favorite-places-card-star {
+  padding-top: 25px;
+  color: var(--accent-color);
+}
+
+.fav-place-imgs {
+  height: 250px;
+  width: 100%;
+}
+
+.fav-place-content {
+  padding: 30px 0;
+}
+
+.fav-place-btn {
+  background: var(--accent-color);
+  border-radius: 50px;
+  height: 20px;
+  padding: 20px;
+}
+
+.empty-stars {
+  color: #ccc;
+}
+
+::ng-deep .section-favorite-places-card .mdc-button__label{
+    color: white;
+}

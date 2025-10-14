@@ -1,0 +1,72 @@
+<div class="container-full">
+  <div class="section-home-hero isDesktop">
+    <div class="container-inside">
+      <div class="rzn-flex section-home-hero-wrapper rzn-flex v-center jc-sb">
+        <div class="section-home-hero-content">
+          <h1 class="titles-accent home-hero-title">Хранa, грижа, забавления</h1>
+          <p class="titles-accent home-hero-sub-title">– всичко за мен, защото съм специален!</p>
+          <p class="home-hero-sub-text">
+            Аз избирам – ти просто изпълняваш! Намери най-добрите услуги, магазини и съвети за мен.
+          </p>
+          <mat-form-field class="search-box" appearance="outline">
+            <mat-label>Каква услуга търсиш?</mat-label>
+            <input
+              type="text"
+              matInput
+              [matAutocomplete]="auto"
+              class="search-input"
+            />
+              <button mat-icon-button matSuffix>
+                <mat-icon>search</mat-icon>
+              </button>
+            <mat-autocomplete #auto="matAutocomplete">
+              <mat-option value="Грижи">Грижи</mat-option>
+              <mat-option value="Храна">Храна</mat-option>
+              <mat-option value="Забавления">Забавления</mat-option>
+              <mat-option value="Магазини">Магазини</mat-option>
+              <mat-option value="Услуги">Услуги</mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+        </div>
+        <div class="section-home-hero-img">
+          <img src="../../../assets/images/animals/cat-and-dog.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-home-hero isMobile">
+    <div class="container-inside">
+      <div class="rzn-flex section-home-hero-wrapper rzn-flex v-center jc-sb">
+        <div class="section-home-hero-img">
+          <img src="../../../assets/images/animals/cat-and-dog.png" alt="" />
+        </div>
+        <div class="section-home-hero-content">
+          <h1 class="titles-accent home-hero-title center-text">Хранa, грижа, забавления</h1>
+          <p class="home-hero-sub-title center-text">– всичко за мен, защото съм специален!</p>
+          <div class="hero-section">
+            <mat-form-field appearance="outline">
+              <mat-label>Каква услуга търсиш?</mat-label>
+              <input type="text" matInput />
+              <button mat-icon-button matSuffix>
+                <mat-icon>search</mat-icon>
+              </button>
+
+              <mat-autocomplete #auto="matAutocomplete">
+                <mat-option value="Грижи">Грижи</mat-option>
+                <mat-option value="Храна">Храна</mat-option>
+                <mat-option value="Забавления">Забавления</mat-option>
+                <mat-option value="Магазини">Магазини</mat-option>
+                <mat-option value="Услуги">Услуги</mat-option>
+              </mat-autocomplete>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="image-container rzn-flex jc-c h-center">
+    <img src="../../../assets/images/backgrounds/bg-bottom-line.png" alt="" />
+  </div>
+</div>

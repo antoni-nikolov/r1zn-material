@@ -1,0 +1,53 @@
+/* ---------- Aктуални Новини  ---------- */
+.title-tags {
+	background: #76CAEE;
+	width: fit-content;
+	padding: 10px;
+	border-radius: 8px;
+	color: white;
+	text-transform: uppercase;
+}
+
+
+
+.section-current-news-card-img img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.home-top-tags {
+    padding-top: 20px;
+}
+
+.section-current-news-card-img {
+    position: relative;
+}
+
+.section-current-news-card-img img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.section-current-news-card-img p {
+    position: absolute;
+    top: -40px;
+    right: 15px;
+}
+
+.section-current-news-card-date {
+    padding: 10px 0 15px;
+}
+
+.section-current-news-card-date p {
+    margin: 0;
+    padding-left: 10px;
+}
+
+:host ::ng-deep .mdc-text-field--outlined {
+  --mdc-outlined-text-field-container-shape: 50px;
+  padding: 0 5px;
+}
