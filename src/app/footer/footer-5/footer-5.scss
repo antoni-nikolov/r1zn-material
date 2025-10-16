@@ -1,0 +1,150 @@
+.footer {
+  background: linear-gradient(180deg, #0a0f25 0%, #0b122e 60%, #0d1b48 100%);
+  color: #fff;
+  padding: 60px 80px;
+  border-radius: 40px;
+  position: relative;
+}
+
+.footer::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: radial-gradient(ellipse at bottom center, rgba(45, 91, 255, 0.5), transparent 70%);
+}
+
+.footer-content {
+  z-index: 1;
+}
+
+.footer-left {
+  max-width: 35%;
+}
+
+.footer-left p {
+  color: #ccc;
+}
+
+.btn {
+  background: #2d5bff;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 25px;
+  transition: background 0.3s;
+  width: 110px;
+}
+
+.btn:hover {
+  background: #1e44d1;
+}
+
+.link-column a {
+  color: #ccc;
+  transition: color 0.2s;
+}
+
+.link-column a:hover {
+  color: #fff;
+}
+
+.footer-subscribe {
+  background: #f9f9ff;
+  color: #000;
+  padding: 25px 35px;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.subscribe-text p {
+  margin: 4px 0 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.subscribe-form input {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  font-size: 14px;
+  min-width: 220px;
+}
+
+.subscribe-form button {
+  background: #2d5bff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.subscribe-form button:hover {
+  background: #1e44d1;
+}
+
+.footer-bottom {
+  color: #bbb;
+  z-index: 1;
+}
+
+.footer-bottom p {
+  color: #ccc;
+}
+
+.footer-bottom .footer-logo {
+  width: 200px;
+}
+
+.footer-bottom .footer-logo img {
+  width: 100%;
+}
+
+.templates {
+  color: #fff;
+  background: #1a1f3a;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.templates:hover {
+  background: #2d5bff;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-subscribe{
+    flex-direction: column;
+  }
+
+  .footer-links{
+    flex-direction: column;
+  }
+
+  .footer-bottom{
+    flex-direction: column;
+  }
+
+  .subscribe-form{
+    flex-direction: column;
+  }
+
+  .footer{
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .footer-left{
+    max-width: 100%;
+    justify-items: center;
+  }
+}

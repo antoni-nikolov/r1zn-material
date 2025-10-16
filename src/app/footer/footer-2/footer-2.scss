@@ -10,6 +10,14 @@
   border: 1px solid #ccc;
 }
 
+.footer-logo {
+  width: 200px;
+}
+
+.footer-logo img {
+  width: 100%;
+}
+
 .footer-bottom {
   border-top: 1px solid #ccc;
   padding-top: 20px;
@@ -26,6 +34,25 @@
   text-decoration: underline;
 }
 
-.footer-top{
-    padding-bottom: 50px;
+.footer-top {
+  padding-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+  }
+
+  .footer-container {
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .footer-logo {
+    justify-self: center;
+  }
 }
