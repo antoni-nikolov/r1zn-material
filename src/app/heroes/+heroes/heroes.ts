@@ -5,16 +5,16 @@ import { Hero3 } from '../hero-3/hero-3';
 import { Hero4 } from '../hero-4/hero-4';
 
 @Component({
-  selector: 'app-heros',
+  selector: 'app-heroes',
   imports: [
     Hero1,
     Hero2,
     Hero3,
     Hero4
   ],
-  templateUrl: './heros.html',
-  styleUrl: './heros.scss'
+  templateUrl: './heroes.html',
+  styleUrl: './heroes.scss'
 })
-export class Heros {
+export class Heroes {
 
 }

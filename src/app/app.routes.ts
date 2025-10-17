@@ -2,9 +2,9 @@ import { Routes } from '@angular/router';
 import { Headers } from './header/+headers/headers';
 import { Footers } from './footer/+footers/footers';
 import { Widgets } from './widgets/+widgets/widgets';
-import { Heros } from './heros/+heros/heros';
 import { Sections } from './sections/+sections/sections';
 import { Cards } from './cards/+cards/cards';
+import { Heroes } from './heroes/+heroes/heroes';
 
 export const routes: Routes = [
   {
@@ -16,8 +16,8 @@ export const routes: Routes = [
     component: Footers,
   },
   {
-    path: 'heros',
-    component: Heros,
+    path: 'heroes',
+    component: Heroes,
   },
   {
     path: 'sections',
