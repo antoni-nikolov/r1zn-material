@@ -1,6 +1,6 @@
 //// Title 1 ////
 
-.title-1{
+.title-1 {
     padding: 50px 0;
     align-items: center;
 }
@@ -10,20 +10,42 @@
 
 
 //// Title 2 ////
-.title-2{
+.title-2 {
+
     padding: 50px 0;
     align-items: center;
+
+    .t-2-wrapp {
+        /* ще работи само ако .title-2 е display: grid  или елемента има rzn-grig класс*/
+        justify-items: end;
+    }
+
+    input[type='email'] {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 50px 0 0 50px;
+        background-color: #f2f4ff;
+    }
+
+    button {
+        padding: 10px 25px;
+        border: none;
+        background-color: blue;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 50px;
+        transition: background-color 0.3s;
+    }
 }
 
-.t-2-wrapp{
-    justify-items: end;
-}
+
 
 //// End Title 2 ////
 
 
 //// Title 3 ////
-.title-3{
+.title-3 {
     text-align: center;
     max-width: 900px;
     margin: 0 auto;
@@ -32,4 +54,3 @@
 
 
 //// End Title 3 ////
-
