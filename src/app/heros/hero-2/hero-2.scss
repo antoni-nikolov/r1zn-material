@@ -1,0 +1,114 @@
+.watch-video p {
+  margin: 0;
+}
+
+.image-section {
+  flex: 1;
+  height: 500px;
+  position: relative;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.img-avatars .img-avatar {
+}
+
+.img-avatar {
+  width: 30px;
+  height: 30px;
+  margin-left: -10px;
+}
+
+.img-avatar img {
+  border: 2px solid white;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  object-fit: cover;
+}
+.watch-video-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.watch-video-container mat-icon {
+  background-color: blue;
+  border-radius: 50%;
+  color: white;
+  padding: 5px;
+}
+
+.watch-video-title {
+  font-weight: bold;
+}
+
+.watch-video-txt {
+  color: #adadad;
+}
+
+.text-section {
+  flex: 1;
+  min-width: 300px;
+  flex-direction: column;
+  padding: 10px 0 30px;
+}
+
+.text-section p {
+  line-height: 1.6;
+}
+
+.text-section h2 {
+  width: 70%;
+}
+
+.btn {
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: #3f51b5;
+  color: #fff;
+}
+
+.feature mat-icon {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 5px;
+  border-radius: 5px;
+}
+::ng-deep .btn-primary .mdc-button__label,
+::ng-deep .btn-outline:hover .mdc-button__label {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .features {
+    padding-top: 40px;
+    flex-direction: column;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .text-section h2 {
+    width: 100%;
+    text-align: center;
+}
+}

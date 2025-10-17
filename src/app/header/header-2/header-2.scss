@@ -1,0 +1,15 @@
+.nav-logo {
+    width: 130px;
+}
+
+.nav-logo:hover {
+    cursor: pointer;
+}
+
+.header-btn button{
+    border-radius: 50px;
+}
+
+::ng-deep .header-btn button .mdc-button__label{
+    color: white;
+}
