@@ -5,6 +5,7 @@ import { Widgets } from './widgets/+widgets/widgets';
 import { Sections } from './sections/+sections/sections';
 import { Cards } from './cards/+cards/cards';
 import { Heroes } from './heroes/+heroes/heroes';
+import { Titles } from './titles/titles/titles';
 
 export const routes: Routes = [
   {
@@ -30,5 +31,9 @@ export const routes: Routes = [
   {
     path: 'widgets',
     component: Widgets,
+  },
+  {
+    path: 'titles',
+    component: Titles,
   },
 ];
