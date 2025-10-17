@@ -1,122 +1,134 @@
 .header {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 20px 0;
-    border-bottom: 1px solid var(--accent-color);
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-logo {
-    width: 130px;
+  width: 130px;
 }
 
 .nav-logo:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .nav {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .nav-bts {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .nav-bts a {
-    border: 1px solid var(--accent-color);
-    padding: 10px;
-    border-radius: 20px;
-    margin-bottom: 0;
+  border: 1px solid var(--accent-color);
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 0;
 }
 
 .nav-link {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .profile-img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 1px solid var(--accent-color);
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid var(--accent-color);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile-img img {
-    object-fit: cover;
-
+  object-fit: cover;
 }
 
 .social-icons svg {
-    fill: white;
-    padding-right: 10px;
-    padding-top: 10px;
+  fill: white;
+  padding-right: 10px;
+  padding-top: 10px;
 }
 
 .header-call-icon {
-    fill: currentColor;
-    color: white;
-    width: 1em;
-    height: 1em;
-    border: none;
-    background: none;
+  fill: currentColor;
+  color: white;
+  width: 1em;
+  height: 1em;
+  border: none;
+  background: none;
 }
 
 .header-top-wrapp {
-    background-color: var(--accent-color);
-    padding: 10px 0;
-    width: 100%;
+  background-color: var(--accent-color);
+  padding: 10px 0;
+  width: 100%;
 }
 
 .header-top {
-    padding: 0;
-    justify-content: space-between
+  padding: 0;
+  justify-content: space-between;
 }
 
 .header-top-info-business span {
-    font-size: 16px;
-    color: white;
+  font-size: 16px;
+  color: white;
 }
 
 .isMobile {
+  display: none;
+}
+
+.menu-toggle.isMobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav.isDesktop,
+  .nav-bts {
     display: none;
-}
+  }
 
-@media (max-width: 900px) {
-	  .header {
-        padding: 15px;
-    }
-}
+  .menu-toggle.isMobile {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
 
-@media only screen and (max-width: 768px) {
+  .header {
+    padding: 15px;
+  }
 
-    .isMobile {
-        display: block;
-    }
+  .isMobile {
+    display: block;
+  }
 
-    .isDesktop {
-        display: none;
-    }
+  .isDesktop {
+    display: none;
+  }
 
-    .header {
-        padding: 15px;
-    }
+  .header {
+    padding: 15px;
+  }
 
-    .header-top-wrapp {
-        padding: 10px;
-        width: auto;
-    }
+  .header-top-wrapp {
+    padding: 10px;
+    width: auto;
+  }
 
-    .header-top-email {
-        display: none;
-    }
+  .header-top-email {
+    display: none;
+  }
 }

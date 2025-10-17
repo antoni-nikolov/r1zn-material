@@ -1,14 +1,14 @@
-<div class="container-full">
-  <div class="container-inside rzn-flex jc-sb v-center">
-    <div class="nav-logo">
-      <img src="/assets/images/logo/lorem-lorem.svg" alt="logo" routerLink="/" width="100%" />
-    </div>
 
-    <div class="header-menu rzn-grid rzn-col-5 v-center">
-      <a routerLink="/" class="center-text">Home</a>
-      <a routerLink="/about" class="center-text">About</a>
-      <a routerLink="/blog" class="center-text">Blog</a>
+<mat-sidenav-container class="sidenav-container">
 
+  <!-- Мобилно меню -->
+  <mat-sidenav #sidenav class="mobile-menu" mode="over" [opened]="false">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/" (click)="sidenav.close()">Home</a>
+      <a mat-list-item routerLink="/about" (click)="sidenav.close()">About</a>
+      <a mat-list-item routerLink="/blog" (click)="sidenav.close()">Blog</a>
+
+      <!-- Падащо меню вътре -->
       <button
         mat-button
         [matMenuTriggerFor]="pagesMenu"
@@ -21,17 +21,61 @@
       </button>
 
       <mat-menu #pagesMenu="matMenu">
-        <button mat-menu-item routerLink="/page1">Page 1</button>
-        <button mat-menu-item routerLink="/page2">Page 2</button>
-        <button mat-menu-item routerLink="/page3">Page 3</button>
+        <button mat-menu-item routerLink="/page1" (click)="sidenav.close()">Page 1</button>
+        <button mat-menu-item routerLink="/page2" (click)="sidenav.close()">Page 2</button>
+        <button mat-menu-item routerLink="/page3" (click)="sidenav.close()">Page 3</button>
       </mat-menu>
 
-      <a routerLink="/pricing" class="center-text">Pricing</a>
-    </div>
+      <a mat-list-item routerLink="/pricing" (click)="sidenav.close()">Pricing</a>
+      <a mat-list-item routerLink="/login" (click)="sidenav.close()">Login</a>
+      <button mat-raised-button color="primary" class="mt-3" (click)="sidenav.close()">Get started</button>
+    </mat-nav-list>
+  </mat-sidenav>
 
-    <div class="header-btn rzn-flex gap-20 v-center">
-      <a routerLink="/login">Login</a>
-      <button mat-raised-button color="primary">Get started</button>
+  <mat-sidenav-content>
+    <div class="container-full">
+      <div class="container-inside rzn-flex jc-sb v-center">
+        <div class="nav-logo">
+          <img src="/assets/images/logo/lorem-lorem.svg" alt="logo" routerLink="/" width="100%" />
+        </div>
+
+        <!-- Десктоп меню -->
+        <div class="header-menu rzn-grid rzn-col-5 v-center desktop-menu">
+          <a routerLink="/" class="center-text">Home</a>
+          <a routerLink="/about" class="center-text">About</a>
+          <a routerLink="/blog" class="center-text">Blog</a>
+
+          <button
+            mat-button
+            [matMenuTriggerFor]="pagesMenuDesktop"
+            class="dropdown-btn rzn-flex h-center gap-10"
+            (menuOpened)="menuOpen = true"
+            (menuClosed)="menuOpen = false"
+          >
+            Pages
+            <mat-icon class="arrow" [class.rotated]="menuOpen">expand_more</mat-icon>
+          </button>
+
+          <mat-menu #pagesMenuDesktop="matMenu">
+            <button mat-menu-item routerLink="/page1">Page 1</button>
+            <button mat-menu-item routerLink="/page2">Page 2</button>
+            <button mat-menu-item routerLink="/page3">Page 3</button>
+          </mat-menu>
+
+          <a routerLink="/pricing" class="center-text">Pricing</a>
+        </div>
+
+        <!-- Десктоп бутони -->
+        <div class="header-btn rzn-flex gap-20 v-center desktop-menu">
+          <a routerLink="/login">Login</a>
+          <button mat-raised-button color="primary">Get started</button>
+        </div>
+
+        <!-- Мобилна иконка -->
+        <button mat-icon-button class="mobile-toggle" (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </div>
     </div>
-  </div>
-</div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

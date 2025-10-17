@@ -1,50 +1,76 @@
 .nav-logo {
-    width: 130px;
+  width: 130px;
 }
 
 .nav-logo:hover {
+  cursor: pointer;
+}
+
+.header-btn a{
     cursor: pointer;
 }
 
-.header-btn button{
-    border-radius: 50px;
+.header-btn button {
+  border-radius: 50px;
 }
 
-::ng-deep .header-btn button .mdc-button__label{
-    color: white;
+.header-menu mat-icon {
+  margin: 0;
 }
 
-::ng-deep .header-menu .mat-mdc-button .mdc-button__label{
-    font-weight: 400;
-    font-size: 16px;
+.header-menu a:hover{
+    background-color: #f8f8f8;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 4px;
 }
 
-.header-menu mat-icon{
-    margin: 0;
+.dropdown-btn .arrow {
+  transition: transform 0.3s ease;
 }
 
-.dropdown-btn {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-weight: 500;
-  color: inherit;
-
-  .arrow {
-    transition: transform 0.3s ease;
-  }
-
-  .arrow.rotated {
-    transform: rotate(180deg);
-  }
+.dropdown-btn .arrow.rotated {
+  transform: rotate(180deg);
 }
 
-/* По избор: стилове за mat-menu */
+.sidenav-container {
+  height: 100%;
+  background-color: #fff;
+}
+
+.mobile-menu {
+  width: 250px;
+  background: #fff;
+}
+
+.mobile-toggle {
+  display: none;
+}
+
 ::ng-deep .mat-mdc-menu-panel {
   border-radius: 8px !important;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 ::ng-deep .mat-mdc-menu-item {
   font-size: 14px;
+}
+
+::ng-deep .header-btn button .mdc-button__label {
+  color: white;
+}
+
+::ng-deep .header-menu .mat-mdc-button .mdc-button__label {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+@media (max-width: 900px) {
+  .desktop-menu {
+    display: none !important;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
 }

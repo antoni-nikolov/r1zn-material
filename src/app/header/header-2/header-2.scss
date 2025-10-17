@@ -1,15 +1,73 @@
 .nav-logo {
-    width: 130px;
+  width: 130px;
 }
 
 .nav-logo:hover {
+  cursor: pointer;
+}
+
+.header-btn button {
+  border-radius: 50px;
+}
+
+.header-menu {
+  background-color: #fff;
+}
+
+.nav-logo img {
+  max-width: 140px;
+  cursor: pointer;
+}
+
+.nav-links-desktop a:hover {
+  color: #1976d2;
+  cursor: pointer;
+}
+
+.header-btn button {
+  font-weight: 500;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.mobile-sidenav {
+  width: 250px;
+  background: #fff;
+  padding-top: 20px;
+}
+
+.mobile-contact-btn {
+  margin: 15px;
+  width: calc(100% - 30px);
+}
+
+::ng-deep .header-btn button .mdc-button__label {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .rzn-grid.rzn-col-4 {
+    display: none;
+  }
+
+  .header-btn {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
     cursor: pointer;
-}
+    padding: 8px;
+  }
 
-.header-btn button{
-    border-radius: 50px;
-}
-
-::ng-deep .header-btn button .mdc-button__label{
-    color: white;
+  .menu-toggle mat-icon {
+    font-size: 28px;
+    color: #333;
+  }
 }
