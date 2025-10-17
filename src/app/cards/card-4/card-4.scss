@@ -1,11 +1,26 @@
-.services-main {
-    border: var(--borderWidth-thin) solid #484f58;
+.card-4 {
+    border: thin solid #484f58;
     border-radius: 50px;
     padding: 30px;
-    background: #151b23;
-    
-    .titles-services {
+    // background: #151b23;
+
+    .card-4-t-w {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .card-4-t {
         font-size: 28px;
-        color: white;
+        
+    }
+
+    .card-4-t-i {
+        background: #252738;
+        fill: white;
+        padding: 15px;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
     }
 }
