@@ -1,3 +1,32 @@
+.title-2 {
+
+    padding: 50px 0;
+    align-items: center;
+
+    .t-2-wrapp {
+        /* ще работи само ако .title-2 е display: grid  или елемента има rzn-grig класс*/
+        justify-items: end;
+    }
+
+    input[type='email'] {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 50px 0 0 50px;
+        background-color: #f2f4ff;
+    }
+
+    button {
+        padding: 10px 25px;
+        border: none;
+        background-color: blue;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 0 50px 50px 0;
+        transition: background-color 0.3s;
+    }
+}
+
 .search-form {
   border-radius: 50px;
   overflow: hidden;
